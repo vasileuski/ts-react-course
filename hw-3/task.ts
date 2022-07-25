@@ -49,7 +49,7 @@ function getCountryString(countries: Country[]) : string {
   return countries.map((countryItem) => countryItem.country).join(", ")
 }
 
-const str = getCountryString(countries);
+const countryString = getCountryString(countries);
 console.log(str);
 
 
@@ -57,7 +57,7 @@ function getCountryPopulation(countries: Country[]) : number {
   return countries.reduce((acc, countryPopulation) => {return acc + countryPopulation.population}, 0)
 }
 
-const population = getCountryPopulation(countries)
+const countryPopulation = getCountryPopulation(countries)
 console.log(population);
 
 function sortCountryArray(countries: Country[]) : string[] {
