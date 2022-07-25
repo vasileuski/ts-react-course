@@ -41,16 +41,12 @@ const countries: Country[] = [
   }
 ]
 
-function func() {
-
-}
-
 function getCountryString(countries: Country[]) : string {
   return countries.map((countryItem) => countryItem.country).join(", ")
 }
 
 const countryString = getCountryString(countries);
-console.log(str);
+console.log(countryString);
 
 
 function getCountryPopulation(countries: Country[]) : number {
@@ -58,7 +54,7 @@ function getCountryPopulation(countries: Country[]) : number {
 }
 
 const countryPopulation = getCountryPopulation(countries)
-console.log(population);
+console.log(countryPopulation);
 
 function sortCountryArray(countries: Country[]) : string[] {
   const sortArr =  countries.sort((a, b) => a.country > b.country ? 1 : -1)
