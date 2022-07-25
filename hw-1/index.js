@@ -12,7 +12,8 @@ Array.prototype.customMap = function (callback) {
 
 // Array.reduce
 Array.prototype.customReduce = function (callback, initValue) {
-  let acc = arguments.length >= 2 ? initValue : this[0];
+  // let acc = arguments.length >= 2 ? initValue : this[0];
+  let acc = initValue >= 2 ? initValue : this[0];
   let iStart = arguments.length >= 2 ? 0 : 1;
   for (let i = iStart; i < this.length; i++) {
     acc = callback(acc, this[i], i, this);
@@ -21,7 +22,8 @@ Array.prototype.customReduce = function (callback, initValue) {
   return acc;
 };
 
-let reduceExample = numbersArr.customReduce((value) => value + 10);
+const reduceExample = numbersArr.customReduce((value) => value + 10);
+console.log(reduceExample);
 
 // Array.filter
 Array.prototype.customFilter = function (callback) {

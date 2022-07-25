@@ -51,16 +51,7 @@ console.log(objArray(subjects));
 
 const sortArray = () => {
   let arr = Object.values(subjects);
-  return arr.sort(function (a, b) {
-    if (a.teachers < b.teachers) {
-      return 1;
-    }
-    if (a.teachers > b.teachers) {
-      return -1;
-    }
-    // a должно быть равным b
-    return 0;
-  });
+  return arr.sort((a, b) => b.students - a.students);
 };
 
 console.log(sortArray(subjects));
