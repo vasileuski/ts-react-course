@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  background: rgb(0, 0, 176);
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.card__letters {
+  background: gray;
+}

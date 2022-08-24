@@ -1,6 +1,8 @@
-import React, {useState} from 'react';
-import {Button} from './components/Button'
-import {Signin} from './components/Signin'
+import React, { useState } from "react";
+import "./index.css";
+import { Button } from "./components/Button";
+import { Signin } from "./components/Signin";
+import { User } from "./components/User";
 
 export const App = () => {
   const [value, setValue] = useState(false);
@@ -8,10 +10,9 @@ export const App = () => {
 
   return (
     <div>
-      <Button content="Button" onClick={handleClickValue} isDisabled={value}/>
-      <Signin text="Sign In"/>
+      <Button content="Button" onClick={handleClickValue} isDisabled={value} />
+      <Signin text="Sign In" />
+      <User username="Artsiom Vasileuski" />
     </div>
-  )
-}
-
-
+  );
+};
