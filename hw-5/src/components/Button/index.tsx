@@ -1,6 +1,6 @@
 import { isDisabled } from '@testing-library/user-event/dist/utils';
 import React from 'react';
-import './style.css'
+import style from './style.module.css'
 
 interface IProps {
   content: string,
@@ -10,6 +10,6 @@ interface IProps {
 
 export const Button = (props: IProps) => {
   return (
-    <button onClick={props.onClick} disabled={props.isDisabled}>{props.content}</button>
+    <button className={style.button} onClick={props.onClick} disabled={props.isDisabled}>{props.content}</button>
   )
 }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Button} from './components/Button'
+import {Signin} from './components/Signin'
 
 export const App = () => {
   const [value, setValue] = useState(false);
@@ -8,6 +9,7 @@ export const App = () => {
   return (
     <div>
       <Button content="Button" onClick={handleClickValue} isDisabled={value}/>
+      <Signin text="Sign In"/>
     </div>
   )
 }
