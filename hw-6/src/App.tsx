@@ -9,11 +9,11 @@ export function App() {
     <div className="container">
       <ul className="card__list">
         <Card card={cards[0]} />
+        <Card card={cards[1]} />
         <Card card={cards[0]} />
+        <Card card={cards[1]} />
         <Card card={cards[0]} />
-        <Card card={cards[0]} />
-        <Card card={cards[0]} />
-        <Card card={cards[0]} />
+        <Card card={cards[1]} />
         <Card card={cards[0]} />
       </ul>
 

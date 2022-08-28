@@ -10,11 +10,13 @@ body {
 }
 
 .container {
-  max-width: 1105px;
+  max-width: 1115px;
   margin: 0 auto;
 }
 
 .card__list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 63px;
+  margin: 5px;
 }
