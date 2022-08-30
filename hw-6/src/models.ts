@@ -8,3 +8,9 @@ export interface ICard {
   author?: number;
   price: number;
 }
+
+export interface IEmoji {
+  title: string;
+  symbol: string;
+  keywords: string;
+}

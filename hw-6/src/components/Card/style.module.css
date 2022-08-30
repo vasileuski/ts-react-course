@@ -1,3 +1,10 @@
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 63px;
+  margin: 5px;
+}
+
 .card {
   padding: 28px 21px 15px;
   background: #fff;
