@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { Clicker } from "./components/Clicker";
 import { Cards } from "./components/Cards";
-import { Emojis } from "./components/EmojiList";
+import { EmojiList } from "./components/EmojiList";
 import { Input } from "./components/Input";
 
 export function App() {
@@ -11,7 +11,7 @@ export function App() {
       {/* <Cards /> */}
       {/* <Clicker /> */}
       <Input value={""} onChange={() => {}} />
-      <Emojis />
+      <EmojiList />
     </div>
   );
 }
