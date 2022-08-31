@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import { Button } from "./components/Button";
-import { Signin } from "./components/Signin";
+import { Title } from "./components/Title";
 import { User } from "./components/User";
 
 export const App = () => {
@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <div>
       <Button content="Button" onClick={handleClickValue} isDisabled={value} />
-      <Signin text="Sign In" />
+      <Title text="Sign In" />
       <User username="Artsiom Vasileuski" />
     </div>
   );

@@ -5,6 +5,6 @@ interface IProps {
   text: string;
 }
 
-export const Signin = (props: IProps) => {
-  return <button className={style.signin}>{props.text}</button>;
+export const Title = (props: IProps) => {
+  return <button className={style.title}>{props.text}</button>;
 };
