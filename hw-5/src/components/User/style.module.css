@@ -1,0 +1,16 @@
+.card {
+  width: 350px;
+  display: flex;
+  background: rgb(0, 0, 250);
+  padding: 20px;
+  margin: 50px;
+}
+
+.card__letters {
+  background: rgb(205, 205, 205);
+  padding: 20px;
+}
+
+.card__fullname {
+  padding: 20px;
+}
