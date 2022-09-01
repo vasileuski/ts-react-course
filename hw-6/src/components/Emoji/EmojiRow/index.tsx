@@ -1,5 +1,5 @@
 import React from "react";
-import { IEmoji } from "../../models";
+import { IEmoji } from "../../../models";
 import style from "./style.module.css";
 
 interface EmojiProps {
