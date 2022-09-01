@@ -11,7 +11,10 @@ export const User = (props: User) => {
 
   return (
     <div className={style.card}>
-      <p className={style.card__letters}>{firstLastName}</p>
+      <p className={style.card__letters}>
+        {fullName[0][0].toUpperCase()}
+        {fullName[1] ? fullName[1][0].toUpperCase() : ""}
+      </p>
       <p className={style.card__fullname}>{props.username}</p>
     </div>
   );
