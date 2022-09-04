@@ -5,14 +5,17 @@ import { Cards } from "./components/Cards";
 import { EmojiList } from "./components/Emoji/EmojiList";
 import { Input } from "./components/Input";
 import { TodoList } from "./components/TodoList/List";
+import { Header } from "./components/Header";
+import { User } from "./components/User";
 
 export function App() {
   return (
     <div className="container">
       {/* <Cards /> */}
       {/* <Clicker /> */}
-      <EmojiList />
+      {/* <EmojiList /> */}
       {/* <TodoList /> */}
+      <Header />
     </div>
   );
 }

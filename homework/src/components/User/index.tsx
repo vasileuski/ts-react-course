@@ -3,6 +3,8 @@ import style from "./style.module.css";
 
 interface User {
   username: string;
+  onClick?: () => void;
+  className?: string;
 }
 
 export const User = (props: User) => {

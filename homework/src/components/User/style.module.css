@@ -1,16 +1,15 @@
 .card {
-  width: 350px;
   display: flex;
-  background: rgb(0, 0, 250);
-  padding: 20px;
-  margin: 50px;
+  background: transparent;
 }
 
 .card__letters {
-  background: rgb(205, 205, 205);
-  padding: 20px;
+  background: transparent;
+  padding: 15px;
+  color: #016efc;
 }
 
 .card__fullname {
-  padding: 20px;
+  padding: 15px;
+  color: #016efc;
 }

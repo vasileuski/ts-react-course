@@ -12,7 +12,10 @@ export const EmojiList = () => {
   };
 
   const filteredEmojis = emojis.filter((item) => {
-    if (item.title.toLowerCase().includes(text.toLowerCase())) {
+    if (
+      item.title.toLowerCase().includes(text.toLowerCase()) ||
+      item.keywords.toLowerCase().includes(text.toLowerCase())
+    ) {
       return true;
     }
 
