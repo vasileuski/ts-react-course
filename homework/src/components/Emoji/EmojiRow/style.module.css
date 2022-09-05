@@ -33,6 +33,7 @@
   padding: 10px;
   font-size: 30px;
   margin: 10px 0;
+  background-color: rgb(235, 235, 235);
 }
 
 .input__emoji:focus {

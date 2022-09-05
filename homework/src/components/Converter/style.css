@@ -17,6 +17,6 @@
 }
 
 .converter__input {
-  width: 400px;
-  border: 10px solid black;
+  height: 40px;
+  font-size: 25px;
 }

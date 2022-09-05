@@ -24,6 +24,11 @@ export const Converter = () => {
     setResultDollar("" + Number(valueBelki) * 0.39);
   };
 
+  const onClick = () => {
+    setResultDollar("");
+    setResultBelki("");
+  };
+
   return (
     <div className="converter">
       <h1 className="converter__title">Live Currency Converter</h1>
@@ -33,6 +38,7 @@ export const Converter = () => {
           value={resultDollar}
           onChange={handleDollarChange}
           className="converter__input"
+          onClick={onClick}
         />
       </div>
       <div className="converter__item">
@@ -41,6 +47,7 @@ export const Converter = () => {
           value={resultBelki}
           onChange={handleBelkiChange}
           className="converter__input"
+          onClick={onClick}
         />
       </div>
     </div>
