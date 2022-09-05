@@ -7,6 +7,7 @@ import { Input } from "./components/Input";
 import { TodoList } from "./components/TodoList/List";
 import { Header } from "./components/Header";
 import { User } from "./components/User";
+import { Converter } from "./components/Converter";
 
 export function App() {
   return (
@@ -15,7 +16,8 @@ export function App() {
       {/* <Clicker /> */}
       {/* <EmojiList /> */}
       {/* <TodoList /> */}
-      <Header />
+      {/* <Header /> */}
+      <Converter />
     </div>
   );
 }

@@ -24,7 +24,11 @@ export const EmojiList = () => {
 
   return (
     <>
-      <Input value={text} onChange={handleOnChange} />
+      <Input
+        value={text}
+        onChange={handleOnChange}
+        className={style.input__emoji}
+      />
       <ul className={style.emoji__list}>
         {filteredEmojis.map((item, index) => (
           <EmojiRow emoji={item} key={index} />
