@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ChangeEventHandler, useState } from "react";
 import { Input } from "../Input";
 import "./style.css";
 
@@ -6,7 +6,23 @@ export const Converter = () => {
   const [resultDollar, setResultDollar] = useState("");
   const [resultBelki, setResultBelki] = useState("");
 
-  const handleChange = () => {};
+  const handleDollarChange: ChangeEventHandler<HTMLInputElement> = (event) => {
+    const valueDollar = event.target.value;
+    if (!Number(valueDollar) && valueDollar) {
+      return;
+    }
+    setResultDollar(valueDollar);
+    setResultBelki("" + Number(valueDollar) * 2.54);
+  };
+
+  const handleBelkiChange: ChangeEventHandler<HTMLInputElement> = (event) => {
+    const valueBelki = event.target.value;
+    if (!Number(valueBelki) && valueBelki) {
+      return;
+    }
+    setResultBelki(valueBelki);
+    setResultDollar("" + Number(valueBelki) * 0.39);
+  };
 
   return (
     <div className="converter">
@@ -15,7 +31,7 @@ export const Converter = () => {
         <p className="converter__text">Enter currency in $, USD</p>
         <Input
           value={resultDollar}
-          onChange={handleChange}
+          onChange={handleDollarChange}
           className="converter__input"
         />
       </div>
@@ -23,7 +39,7 @@ export const Converter = () => {
         <p className="converter__text">Enter currency in BYN</p>
         <Input
           value={resultBelki}
-          onChange={handleChange}
+          onChange={handleBelkiChange}
           className="converter__input"
         />
       </div>

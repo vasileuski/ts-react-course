@@ -3,7 +3,7 @@ import React, { ChangeEventHandler, useState } from "react";
 interface Input {
   value: string;
   placeholder?: string;
-  onChange: ChangeEventHandler<HTMLInputElement>;
+  onChange?: ChangeEventHandler<HTMLInputElement>;
   className?: string;
 }
 
