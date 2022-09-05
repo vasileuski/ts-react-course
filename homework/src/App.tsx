@@ -8,6 +8,7 @@ import { TodoList } from "./components/TodoList/List";
 import { Header } from "./components/Header";
 import { User } from "./components/User";
 import { Converter } from "./components/Converter";
+import { Time } from "./components/Time";
 
 export function App() {
   return (
@@ -17,7 +18,8 @@ export function App() {
       {/* <EmojiList /> */}
       {/* <TodoList /> */}
       {/* <Header /> */}
-      <Converter />
+      {/* <Converter /> */}
+      <Time />
     </div>
   );
 }
