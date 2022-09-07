@@ -16,12 +16,12 @@ export function App() {
     <div className="container">
       {/* <Cards /> */}
       {/* <Clicker /> */}
-      {/* <EmojiList /> */}
       {/* <TodoList /> */}
       {/* <Header /> */}
-      <Converter />
+      {/* <EmojiList /> */}
+      {/* <Converter /> */}
       {/* <Time /> */}
-      {/* <Timer /> */}
+      <Timer />
     </div>
   );
 }
