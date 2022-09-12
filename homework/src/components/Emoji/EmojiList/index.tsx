@@ -23,7 +23,7 @@ export const EmojiList = () => {
   });
 
   return (
-    <>
+    <div className="container">
       <Input
         value={text}
         onChange={handleOnChange}
@@ -34,6 +34,6 @@ export const EmojiList = () => {
           <EmojiRow emoji={item} key={index} />
         ))}
       </ul>
-    </>
+    </div>
   );
 };

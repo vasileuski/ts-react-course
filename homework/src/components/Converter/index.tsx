@@ -1,6 +1,6 @@
 import React, { ChangeEventHandler, useState } from "react";
 import { Input } from "../Input";
-import "./style.css";
+import style from "./styles.module.css";
 
 export const Converter = () => {
   const [resultDollar, setResultDollar] = useState("");
@@ -30,23 +30,23 @@ export const Converter = () => {
   };
 
   return (
-    <div className="converter">
-      <h1 className="converter__title">Live Currency Converter</h1>
-      <div className="converter__item">
-        <p className="converter__text">Enter currency in $, USD</p>
+    <div className={style.converter}>
+      <h1 className={style.converter__title}>Live Currency Converter</h1>
+      <div className={style.converter__item}>
+        <p className={style.converter__text}>Enter currency in $, USD</p>
         <Input
           value={resultDollar}
           onChange={handleDollarChange}
-          className="converter__input"
+          className={style.converter__input}
           onClick={onClick}
         />
       </div>
       <div className="converter__item">
-        <p className="converter__text">Enter currency in BYN</p>
+        <p className={style.converter__text}>Enter currency in BYN</p>
         <Input
           value={resultBelki}
           onChange={handleBelkiChange}
-          className="converter__input"
+          className={style.converter__input}
           onClick={onClick}
         />
       </div>

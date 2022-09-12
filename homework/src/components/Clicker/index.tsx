@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./style.module.css";
+import style from "./styles.module.css";
 
 export const Clicker = () => {
   const [value, setValue] = useState(0);

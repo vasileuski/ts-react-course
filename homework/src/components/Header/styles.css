@@ -1,7 +1,11 @@
+.header {
+  background-color: #f8fafe;
+}
+
 nav {
   width: 70em;
   height: 5em;
-  background-color: #f8fafe;
+  /* background-color: #f8fafe; */
   display: flex;
   justify-content: flex-start;
   padding: 1em;

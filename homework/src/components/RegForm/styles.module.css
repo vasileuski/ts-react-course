@@ -1,0 +1,24 @@
+.regform {
+  text-align: center;
+}
+
+.regform__element {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  margin-bottom: 41px;
+  color: #254050;
+}
+
+.regform__title {
+  margin-bottom: 14px;
+}
+
+.regform__input {
+  font-size: 32px;
+  background: #f5f9ff;
+  border: 4px solid #82a9ff;
+  border-radius: 200px;
+  padding: 10px 20px;
+}

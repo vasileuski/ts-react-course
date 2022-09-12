@@ -10,18 +10,14 @@ import { User } from "./components/User";
 import { Converter } from "./components/Converter";
 import { Time } from "./components/Time";
 import { Timer } from "./components/Timer";
+import { RegForm } from "./components/RegForm";
+import { BrowserRouter } from "react-router-dom";
+import { RouterRoot } from "./router";
 
 export function App() {
   return (
-    <div className="container">
-      {/* <Cards /> */}
-      {/* <Clicker /> */}
-      {/* <TodoList /> */}
-      {/* <Header /> */}
-      {/* <EmojiList /> */}
-      {/* <Converter /> */}
-      {/* <Time /> */}
-      <Timer />
-    </div>
+    <BrowserRouter>
+      <RouterRoot />
+    </BrowserRouter>
   );
 }

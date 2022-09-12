@@ -2,7 +2,7 @@ import { Card } from "../Card";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { ICard } from "../../models";
-import style from "../Card/style.module.css";
+import style from "../Card/styles.module.css";
 
 export const Cards = () => {
   const [cards, setCards] = useState<ICard[]>();
@@ -19,10 +19,12 @@ export const Cards = () => {
   }, []);
 
   return (
-    <ul className={style.card__list}>
-      {cards?.map((card) => (
-        <Card card={card} key={card.id} />
-      ))}
-    </ul>
+    <div className="container">
+      <ul className={style.card__list}>
+        {cards?.map((card) => (
+          <Card card={card} key={card.id} />
+        ))}
+      </ul>
+    </div>
   );
 };

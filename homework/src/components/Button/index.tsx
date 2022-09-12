@@ -1,4 +1,4 @@
-import style from "./style.module.css";
+import style from "./styles.module.css";
 
 type ButtonColorType = "primary" | "secondary" | "secondary2";
 
