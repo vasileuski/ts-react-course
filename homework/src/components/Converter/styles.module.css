@@ -1,0 +1,22 @@
+.converter {
+  text-align: center;
+}
+
+.converter__title {
+  margin-bottom: 20px;
+}
+
+.converter__item {
+  border: 2px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.converter__text {
+  margin-bottom: 10px;
+}
+
+.converter__input {
+  height: 40px;
+  font-size: 25px;
+}

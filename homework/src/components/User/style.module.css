@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  background: transparent;
+}
+
+.card__letters {
+  background: transparent;
+  padding: 15px;
+  color: #016efc;
+}
+
+.card__fullname {
+  padding: 15px;
+  color: #016efc;
+}
