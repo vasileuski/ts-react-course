@@ -1,5 +1,5 @@
-import React from "react";
 import "./index.css";
+import React, { createContext, useState } from "react";
 import { Clicker } from "./components/Clicker";
 import { Cards } from "./components/Cards";
 import { EmojiList } from "./components/Emoji/EmojiList";
@@ -15,10 +15,19 @@ import { BrowserRouter } from "react-router-dom";
 import { RouterRoot } from "./router";
 import { LoginForm } from "./components/LoginForm";
 
+export const Context = createContext<{
+  isDark: boolean;
+  setIsDark: (value: boolean) => void;
+}>({ isDark: false, setIsDark: () => {} });
+
 export function App() {
+  const [isDark, setIsDark] = useState(false);
+
   return (
     <BrowserRouter>
-      <RouterRoot />
+      <Context.Provider value={{ isDark: isDark, setIsDark: setIsDark }}>
+        <RouterRoot />
+      </Context.Provider>
     </BrowserRouter>
   );
 }

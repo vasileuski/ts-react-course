@@ -1,12 +1,13 @@
 import React from "react";
+import { Container } from "../../components/Container";
 import { EmojiList } from "../../components/Emoji/EmojiList";
 import { Header } from "../../components/Header";
 
 export const Emoji = () => {
   return (
-    <div>
+    <Container>
       <Header />
       <EmojiList />
-    </div>
+    </Container>
   );
 };

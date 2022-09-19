@@ -14,10 +14,6 @@
 .container {
   max-width: 1115px;
   margin: 0 auto;
-  height: 100%;
-  background-image: url("./components/assets/cloud.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
 }
 
 a {
