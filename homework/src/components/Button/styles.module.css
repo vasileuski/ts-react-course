@@ -4,8 +4,14 @@
 }
 
 .primary {
-  background-color: blue;
   color: white;
+  background: #007bff;
+  border: 4px solid #0077f7;
+  border-radius: 200px;
+  width: 372px;
+  height: 63px;
+  font-size: 25px;
+  line-height: 29px;
 }
 
 .secondary {

@@ -24,7 +24,7 @@ export const Header = () => {
 
   return (
     <div className="header">
-      <div className="container">
+      <div className="header-container">
         <nav className={nav_clicked}>
           <div className="burger-menu" onClick={updateMenu}>
             <div className={burger_class}></div>
@@ -38,7 +38,7 @@ export const Header = () => {
           <ul className="list">
             <div className="list__first-column">
               <li className="list__item">
-                <a href="#">Login</a>
+                <Link to="/login">Login</Link>
               </li>
               <li className="list__item">
                 <Link to="/registration">Registration</Link>

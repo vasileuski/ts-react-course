@@ -13,6 +13,7 @@ import { Timer } from "./components/Timer";
 import { RegForm } from "./components/RegForm";
 import { BrowserRouter } from "react-router-dom";
 import { RouterRoot } from "./router";
+import { LoginForm } from "./components/LoginForm";
 
 export function App() {
   return (

@@ -2,6 +2,11 @@
   background-color: #f8fafe;
 }
 
+.header-container {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
 nav {
   width: 70em;
   height: 5em;
