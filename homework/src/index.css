@@ -11,10 +11,6 @@
   transition: background-color 0.5s, margin-left 0.5s;
 }
 
-/* body {
-  background: #7aa899;
-} */
-
 .container {
   max-width: 1115px;
   margin: 0 auto;

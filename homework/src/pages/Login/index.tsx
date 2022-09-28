@@ -1,13 +1,13 @@
 import React from "react";
 import { Container } from "../../components/Container";
-import { EmojiList } from "../../components/Emoji/EmojiList";
 import { Header } from "../../components/Header";
+import { LoginForm } from "../../components/LoginForm";
 
-export const Emoji = () => {
+export const Login = () => {
   return (
     <Container>
       <Header />
-      <EmojiList />
+      <LoginForm />
     </Container>
   );
 };

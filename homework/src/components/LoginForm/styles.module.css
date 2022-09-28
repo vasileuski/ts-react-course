@@ -1,39 +1,40 @@
-.regform {
+.login {
   text-align: center;
+  height: 100vh;
 }
 
-.regform__head {
+.login__head {
   display: flex;
   justify-content: center;
   margin-bottom: 53px;
 }
 
-.regform__head-text {
+.login__head-text {
   font-weight: 700;
   font-size: 45px;
   line-height: 145.2%;
   letter-spacing: 0.03em;
   color: #75869b;
-  margin-right: 13px;
+  margin-left: 13px;
 }
 
-.regform__head-text-active {
+.login__head-text-active {
   font-weight: 700;
   font-size: 45px;
   line-height: 145.2%;
   letter-spacing: 0.03em;
   color: #016efc;
-  margin-left: 13px;
+  margin-right: 13px;
 }
 
-.regform__head-line {
+.login__head-line {
   font-weight: 700;
   font-size: 45px;
   line-height: 145.2%;
   color: #254050;
 }
 
-.regform__element {
+.login__element {
   font-family: "Raleway";
   font-weight: 500;
   font-size: 25px;
@@ -42,15 +43,15 @@
   color: #254050;
 }
 
-.regform__element:last-of-type {
+.login__element:last-of-type {
   margin-bottom: 60px;
 }
 
-.regform__title {
+.login__title {
   margin-bottom: 14px;
 }
 
-.regform__input {
+.login__input {
   width: 372px;
   font-size: 18px;
   background: #f5f9ff;
