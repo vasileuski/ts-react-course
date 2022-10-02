@@ -14,3 +14,10 @@ export interface IEmoji {
   symbol: string;
   keywords: string;
 }
+
+export interface IInfo {
+  title: string;
+  text: string;
+  text_button: string;
+  link: string;
+}

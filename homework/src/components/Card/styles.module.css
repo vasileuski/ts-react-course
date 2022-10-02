@@ -36,9 +36,9 @@
   line-height: 23px;
   margin-bottom: 3px;
   color: #4f4f4f;
-  -webkit-line-clamp: 1; /* Число отображаемых строк */
-  display: -webkit-box; /* Включаем флексбоксы */
-  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -49,9 +49,9 @@
   line-height: 19px;
   margin-bottom: auto;
   color: #979797;
-  -webkit-line-clamp: 2; /* Число отображаемых строк */
-  display: -webkit-box; /* Включаем флексбоксы */
-  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 20px;
 }
