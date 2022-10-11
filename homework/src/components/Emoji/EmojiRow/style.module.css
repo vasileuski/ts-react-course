@@ -6,6 +6,7 @@
 
 .emoji__item {
   display: grid;
+  height: 55px;
   grid-template-columns: 1fr 6fr;
   border: 1px solid #6e6c78;
   border-radius: 13px;

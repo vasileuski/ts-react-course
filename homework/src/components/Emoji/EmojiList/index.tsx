@@ -1,20 +1,17 @@
-import React, { ChangeEventHandler, useState } from "react";
+import React from "react";
 import { EmojiRow } from "../EmojiRow";
 import { emojis } from "../../../data/emojis";
 import style from "../EmojiRow/style.module.css";
 import { Input } from "../../Input";
+import { useInput } from "../../../hooks/useInput";
 
 export const EmojiList = () => {
-  const [text, setText] = useState("");
-
-  const handleOnChange: ChangeEventHandler<HTMLInputElement> = (event) => {
-    setText(event.target.value);
-  };
+  const text = useInput();
 
   const filteredEmojis = emojis.filter((item) => {
     if (
-      item.title.toLowerCase().includes(text.toLowerCase()) ||
-      item.keywords.toLowerCase().includes(text.toLowerCase())
+      item.title.toLowerCase().includes(text.value.toLowerCase()) ||
+      item.keywords.toLowerCase().includes(text.value.toLowerCase())
     ) {
       return true;
     }
@@ -24,11 +21,7 @@ export const EmojiList = () => {
 
   return (
     <div className="container">
-      <Input
-        value={text}
-        onChange={handleOnChange}
-        className={style.input__emoji}
-      />
+      <Input {...text} className={style.input__emoji} />
       <ul className={style.emoji__list}>
         {filteredEmojis.map((item, index) => (
           <EmojiRow emoji={item} key={index} />

@@ -1,32 +1,15 @@
 import React, { ChangeEventHandler, useState } from "react";
 import { Link } from "react-router-dom";
+import { useInput } from "../../hooks/useInput";
 import { Button } from "../Button";
 import { Input } from "../Input";
 import styles from "./styles.module.css";
 
 export const RegForm = () => {
-  const [usernameText, setUsernameText] = useState("");
-  const [emailText, setEmailText] = useState("");
-  const [passwordText, setPasswordText] = useState("");
-  const [confirmPasswordText, setConfirmPasswordText] = useState("");
-
-  const usernameChange: ChangeEventHandler<HTMLInputElement> = (event) => {
-    setUsernameText(event.target.value);
-  };
-
-  const emailChange: ChangeEventHandler<HTMLInputElement> = (event) => {
-    setEmailText(event.target.value);
-  };
-
-  const passwordChange: ChangeEventHandler<HTMLInputElement> = (event) => {
-    setPasswordText(event.target.value);
-  };
-
-  const confirmPasswordChange: ChangeEventHandler<HTMLInputElement> = (
-    event
-  ) => {
-    setConfirmPasswordText(event.target.value);
-  };
+  const userName = useInput();
+  const email = useInput();
+  const password = useInput();
+  const confirmPassword = useInput();
 
   return (
     <div className={styles.regform}>
@@ -45,26 +28,17 @@ export const RegForm = () => {
 
         <div className={styles.regform__element}>
           <p className={styles["regform__title"]}>Username</p>
-          <Input
-            value={usernameText}
-            onChange={usernameChange}
-            className={styles["regform__input"]}
-          />
+          <Input {...userName} className={styles["regform__input"]} />
         </div>
         <div className={styles.regform__element}>
           <p className={styles["regform__title"]}>Email</p>
-          <Input
-            value={emailText}
-            onChange={emailChange}
-            className={styles["regform__input"]}
-          />
+          <Input {...email} className={styles["regform__input"]} />
         </div>
         <div className={styles.regform__element}>
           <p className={styles["regform__title"]}>Password</p>
           <Input
             type="password"
-            value={passwordText}
-            onChange={passwordChange}
+            {...password}
             className={styles["regform__input"]}
           />
         </div>
@@ -72,8 +46,7 @@ export const RegForm = () => {
           <p className={styles["regform__title"]}>Confirm password</p>
           <Input
             type="password"
-            value={confirmPasswordText}
-            onChange={confirmPasswordChange}
+            {...confirmPassword}
             className={styles["regform__input"]}
           />
         </div>

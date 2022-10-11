@@ -1,13 +1,9 @@
 .container {
-  background: #fff;
-  background-image: url("../assets/cloud.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
+  background: no-repeat bottom right url("../assets/cloud.png") #fff;
+  height: 100%;
 }
 
 .darkContainer {
-  background: rgb(205, 205, 205);
-  background-image: url("../assets/cloud.png");
-  background-repeat: no-repeat;
-  background-position: bottom right;
+  background: no-repeat bottom right url("../assets/cloud.png")
+    rgb(205, 205, 205);
 }

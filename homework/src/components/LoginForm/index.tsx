@@ -1,20 +1,13 @@
 import React, { ChangeEventHandler, useState } from "react";
 import { Link } from "react-router-dom";
+import { useInput } from "../../hooks/useInput";
 import { Button } from "../Button";
 import { Input } from "../Input";
 import styles from "./styles.module.css";
 
 export const LoginForm = () => {
-  const [usernameEmailText, setUsernameEmailText] = useState("");
-  const [passwordText, setPasswordText] = useState("");
-
-  const usernameEmailChange: ChangeEventHandler<HTMLInputElement> = (event) => {
-    setUsernameEmailText(event.target.value);
-  };
-
-  const passwordChange: ChangeEventHandler<HTMLInputElement> = (event) => {
-    setPasswordText(event.target.value);
-  };
+  const usernameEmail = useInput();
+  const passwordText = useInput();
 
   return (
     <div className={styles.login}>
@@ -30,19 +23,14 @@ export const LoginForm = () => {
         </div>
         <div className={styles.login__element}>
           <p className={styles["login__title"]}>Username / Email</p>
-          <Input
-            value={usernameEmailText}
-            onChange={usernameEmailChange}
-            className={styles["login__input"]}
-          />
+          <Input {...usernameEmail} className={styles["login__input"]} />
         </div>
 
         <div className={styles.login__element}>
           <p className={styles["login__title"]}>Password</p>
           <Input
             type="password"
-            value={passwordText}
-            onChange={passwordChange}
+            {...passwordText}
             className={styles["login__input"]}
           />
         </div>
